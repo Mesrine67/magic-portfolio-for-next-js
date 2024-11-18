@@ -162,7 +162,7 @@ export default function About(
                                 </Flex>
                                 <Flex
                                     paddingX="8">
-                                    Schedule a call
+                                    Planifier un appel
                                 </Flex>
                                 <IconButton
                                     href={about.calendar.link}

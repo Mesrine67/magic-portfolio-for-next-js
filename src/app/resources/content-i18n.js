@@ -2,15 +2,15 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Mike',
+        lastName:  'Martini',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
-        location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        location:  'Europe/France',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+        languages: ['English', 'Français']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -25,13 +25,13 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/Mesrine67',
         },
-        {
-            name: 'LinkedIn',
-            icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
-        },
+        // {
+        //     name: 'LinkedIn',
+        //     icon: 'linkedin',
+        //     link: 'https://www.linkedin.com/company/once-ui/',
+        // },
         {
             name: 'X',
             icon: 'x',
@@ -40,7 +40,7 @@ const createI18nContent = (t) => {
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mike.martini.67@proton.me',
         },
     ]
 

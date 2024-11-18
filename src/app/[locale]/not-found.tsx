@@ -13,11 +13,11 @@ export default function NotFound() {
             <Heading
                 marginBottom="l"
                 variant="display-strong-xs">
-                Page Not Found
+                Page non trouvée
             </Heading>
             <Text
                 onBackground="neutral-weak">
-                The page you are looking for does not exist.
+                La page que vous recherchez n'existe pas.
             </Text>
         </Flex>
     )
