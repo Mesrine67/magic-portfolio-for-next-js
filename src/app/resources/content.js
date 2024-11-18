@@ -1,22 +1,22 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Mike',
+    lastName:  'Martini',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Design Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Europe/France',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Français']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
-}
+    title: <>Abonnez-vous à la newsletter de {person.firstName}</>,
+    description: <>J'écris occasionnellement sur le design, la technologie et je partage des réflexions sur l'intersection entre créativité et ingénierie.</>
+};
 
 const social = [
     // Links are automatically displayed.
@@ -24,13 +24,13 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/Mesrine67',
     },
-    {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
-    },
+    // {
+    //     name: 'LinkedIn',
+    //     icon: 'linkedin',
+    //     link: 'https://www.linkedin.com/company/once-ui/',
+    // },
     {
         name: 'X',
         icon: 'x',
@@ -39,22 +39,22 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mike.martini.67@proton.me',
     },
 ]
 
 const home = {
-    label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
-}
+    label: 'Accueil',
+    title: `Portfolio de ${person.name}`,
+    description: `Site web de portfolio présentant mon travail en tant que ${person.role}`,
+    headline: <>Ingénieur en design et créateur</>,
+    subline: <>Je suis Mike, ingénieur en design chez <InlineCode>FLY</InlineCode>, où je conçois des expériences utilisateur intuitives.<br/> Après le travail, je réalise mes propres projets.</>
+};
 
 const about = {
-    label: 'About',
-    title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    label: 'À propos',
+    title: 'À propos de moi',
+    description: `Rencontrez ${person.name}, ${person.role} de ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -69,24 +69,24 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>${person.name} est un ingénieur en design basé à Jakarta avec une passion pour transformer des défis complexes en solutions de design simples et élégantes. Son travail couvre les interfaces numériques, les expériences interactives et la convergence du design et de la technologie.</>
     },
     work: {
-        display: true, // set to false to hide this section
-        title: 'Work Experience',
+        display: true, // mettre sur false pour cacher cette section
+        title: 'Expériences professionnelles',
         experiences: [
             {
                 company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                timeframe: '2022 - Présent',
+                role: 'Ingénieur en design senior',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Refonte de l'UI/UX de la plateforme FLY, entraînant une augmentation de 20 % de l'engagement utilisateur et une réduction de 30 % des temps de chargement.</>,
+                    <>Pilotage de l'intégration des outils d'IA dans les flux de travail de conception, permettant aux designers d'itérer 50 % plus rapidement.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [ // optionnel : laissez le tableau vide si vous ne voulez pas afficher d'images
                     {
                         src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'Projet Once UI',
                         width: 16,
                         height: 9
                     }
@@ -95,46 +95,46 @@ const about = {
             {
                 company: 'Creativ3',
                 timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                role: 'Responsable design',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Développement d'un système de design unifié pour la marque sur plusieurs plateformes, améliorant la cohérence du design de 40 %.</>,
+                    <>Direction d'une équipe interfonctionnelle pour lancer une nouvelle ligne de produits, contribuant à une augmentation de 15 % des revenus globaux de l'entreprise.</>
                 ],
-                images: [ ]
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
+        display: true, // mettre sur false pour cacher cette section
+        title: 'Études',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Université de Jakarta',
+                description: <>Études en génie logiciel.</>,
             },
             {
                 name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                description: <>Études en marketing en ligne et branding personnel.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true, // mettre sur false pour cacher cette section
+        title: 'Compétences techniques',
         skills: [
             {
                 title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                description: <>Capable de prototyper avec Figma et Once UI à une vitesse impressionnante.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
+                        alt: 'Image de projet',
                         width: 16,
                         height: 9
                     },
                     {
                         src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
+                        alt: 'Image de projet',
                         width: 16,
                         height: 9
                     },
@@ -142,11 +142,11 @@ const about = {
             },
             {
                 title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                description: <>Création d'applications nouvelle génération avec Next.js, Once UI et Supabase.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
+                        alt: 'Image de projet',
                         width: 16,
                         height: 9
                     },
@@ -154,29 +154,28 @@ const about = {
             }
         ]
     }
-}
-
+};
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
+    title: 'Écrire sur le design et la technologie...',
+    description: `Découvrez ce que ${person.name} a récemment partagé`
+    // Créez de nouveaux articles de blog en ajoutant un nouveau fichier .mdx dans app/blog/posts
+    // Tous les articles seront listés sur la route /blog
 }
 
 const work = {
-    label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
+    label: 'Projets',
+    title: 'Mes projets',
+    description: `Projets de design et développement réalisés par ${person.name}`
+    // Créez de nouvelles pages de projet en ajoutant un nouveau fichier .mdx dans app/blog/posts
+    // Tous les projets seront listés sur les routes /home et /work
 }
 
 const gallery = {
-    label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
+    label: 'Galerie',
+    title: 'Ma galerie photo',
+    description: `Une collection de photos par ${person.name}`,
+    // Images provenant de https://pexels.com
     images: [
         { 
             src: '/images/gallery/img-01.jpg', 

@@ -4,7 +4,7 @@
     },
     "newsletter": {
         "title": "Abonnez-vous à la Newsletter de {firstName}",
-        "description": "J'écris occasionnellement sur le design, la technologie, et partage mes réflexions sur l'intersection entre créativité et ingénierie.",
+        "description": "J'écris occasionnellement sur le design, la technologie, et je partage mes réflexions sur l'intersection entre créativité et ingénierie.",
         "button": "S'inscrire"
     },
     "home": {
@@ -12,22 +12,22 @@
         "title": "Portfolio de {name}",
         "description": "Site de portfolio mettant en avant mon travail en tant que {role}",
         "headline": "Ingénieur designer et constructeur",
-        "subline": "Je suis Selene, une ingénieure designer chez FLY, où je crée des expériences utilisateur intuitives. En dehors du travail, je développe mes propres projets."
+        "subline": "Je suis Mike, un ingénieur designer chez FLY, où je crée des expériences utilisateur intuitives. En dehors du travail, je développe mes propres projets."
     },
     "about": {
         "label": "À propos",
         "title": "À propos de moi",
-        "description": "Découvrez {name}, {role} basé(e) à {location}",
+        "description": "Découvrez {name}, {role} basé à {location}",
         "intro": {
             "title": "Introduction",
-            "description": "Selene est une ingénieure designer basée à Jakarta, passionnée par la transformation de défis complexes en solutions simples et élégantes. Son travail couvre les interfaces numériques, les expériences interactives et la convergence du design et de la technologie."
+            "description": "Mike est un ingénieur designer basé à Jakarta, passionné par la transformation de défis complexes en solutions simples et élégantes. Son travail couvre les interfaces numériques, les expériences interactives et la convergence du design et de la technologie."
         },
         "work": {
             "title": "Expériences professionnelles",
             "experiences": {
                 "FLY": {
                     "timeframe": "2022 - Présent",
-                    "role": "Ingénieure Designer Senior",
+                    "role": "Ingénieur Designer Senior",
                     "achievements": "Refonte de l'interface utilisateur/expérience utilisateur (UI/UX) de la plateforme FLY, entraînant une augmentation de 20% de l'engagement utilisateur et des temps de chargement 30% plus rapides.;Piloté l'intégration d'outils d'IA dans les flux de conception, permettant aux designers d'itérer 50% plus rapidement."
                 },
                 "Creativ3": {
